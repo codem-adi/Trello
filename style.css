@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.Title_section {
+    justify-content: center;
+    display: flex;
+    /* padding-top: 2rem; */
+}
+
+.Title_section>h1 {
+    width: fit-content;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    padding: 0px 10px;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+    /*  background-image: linear-gradient(90deg, rgba(62, 113, 162, 1) 0%, rgba(111, 0, 190, 1) 22%, rgba(97, 100, 205, 1) 54%); */
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.parent_div {
+    width: 400px;
+    height: fit-content;
+    padding: 1rem 3rem;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid black;
+    margin: 2rem;
+}
+
+p {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    cursor: move;
+    word-wrap: break-word;
+}
+
+.blury {
+    opacity: 0.5;
+    background-color: blueviolet;
+    /* transform: rotate(5deg); */
+    /* border: 2px solid black; */
+}
+
+h3 {
+    color: white;
+}
+
+.input_section {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    margin: 10px 0px;
+}
+
+.input_section>input,
+button {
+    /* font-size: 1rem; */
+    padding: 1rem 1rem;
+    border: none;
+    margin-right: 0px;
+    background-color: white;
+}
+
+.input_section>button {
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.input_section>button::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 80%;
+    background: rgb(46, 44, 44);
+    top: 10%;
+    left: 0px;
+}
+
+.input_section>button>span {
+    font-size: .5rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 5px;
+}
+
+.input_section>input {
+    /* font-size: 1.5rem; */
+    width: 80%;
+    color: rgb(0, 0, 0);
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.input_section>input:focus {
+    outline: none;
+    color: black;
+}
