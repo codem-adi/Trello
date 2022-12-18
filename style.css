@@ -40,6 +40,7 @@ p {
     padding: 1rem;
     cursor: move;
     word-wrap: break-word;
+    text-transform: capitalize;
 }
 
 .blury {
@@ -104,5 +105,14 @@ button {
 
 .input_section>input:focus {
     outline: none;
+    color: black;
+}
+#inProgress>p{
+    background-color: lightskyblue;
+    color: black;
+}
+
+#completed>p{
+    background-color: lightseagreen;
     color: black;
 }
