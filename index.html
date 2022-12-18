@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work Organizer</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
 
-  <body>
-    <div class="Title_section">
-      <h1>TRELLO</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Organizer</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="https://www.tlcforkidsusa.com/wp-content/uploads/2016/07/cropped-T-logo.png"/> 
+</head>
+
+<body>
+  <div class="Title_section">
+    <h1>TRELLO</h1>
+  </div>
+  <main class="parent">
+    <div class="parent_div" id="todo">
+      <h3>TO DO</h3>
+      <div class="input_section">
+        <input type="text" class="append_text_box" />
+        <button onclick="appendMe()" class="append_btn">
+          <span>APPEND</span> ME
+        </button>
+      </div>
     </div>
-    <main class="parent">
-      <div class="parent_div" id="todo">
-        <h3>TO DO</h3>
-        <div class="input_section">
-          <input type="text" class="append_text_box" />
-          <button onclick="appendMe()" class="append_btn">
-            <span>APPEND</span> ME
-          </button>
-        </div>
-      </div>
-      <div class="parent_div" id="inProgress">
-        <h3>IN PROGRESS</h3>
-      </div>
-      <div class="parent_div" id="completed">
-        <h3>COMPLETED</h3>
-      </div>
-    </main>
+    <div class="parent_div" id="inProgress">
+      <h3>IN PROGRESS</h3>
+    </div>
+    <div class="parent_div" id="completed">
+      <h3>COMPLETED</h3>
+    </div>
+  </main>
 
-    <script defer src="./index.js"></script>
-  </body>
+  <script defer src="./index.js"></script>
+</body>
+
 </html>
